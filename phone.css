@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 5px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+}
+body{
+	background: #f1f1f1;
+}
+fieldset{
+	margin: 0px;
+}
+.a1{
+	margin: 0px;
+}
+.a3{
+	margin: 10px auto;
+
+}
+.a4{
+	width: 100%;
+	margin: 10px auto;
+
+}
+.a5{
+
+     
+}
+.a6{
+	width: 100%;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+} 
+.a7{
+	width:100%;
+    display: block;
+	margin: 10px auto;
+	text-align: center;
+
+}
+#pw{
+	float: left;
+	margin-top: 10px;
+}
+#back{
+	float: right;
+	margin-top: 10px;
+}
