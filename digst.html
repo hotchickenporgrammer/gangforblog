@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>注册页面</title>
+<link rel="stylesheet" href="digest.css">
+<link rel="stylesheet" type="text/css" media="(max-width:768px)" href="phone.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+<form class="a1">
+	<fieldset>
+		<legend class="a2">新用户注册</legend>
+		<table>
+			<tr>
+				<td class="a6">
+				<div class="a3">用户名：<input type="search" id="a" name="name" placeholder="请输入您的账号" pattern="^[a-zA-Z0-9]{6,}$" onblur="checkUser()"><br>
+					<span id="result">只允许输入英文和数字,且长度至少为6位</span></div>
+		        <div class="a3">邮箱地址：<input type="email" name="address" placeholder="请输入您的邮箱地址"></div>
+		        <div class="a3">身份证号码：<input type="search" name="id" placeholder="请输入您的身份证号码"></div>
+		        <div class="a3">登录密码：<input type="password" name="secret" placeholder="请输入密码"><br></div>
+		        <div class="a3">确认密码：<input type="password" name="secret" placeholder="请再次输入密码">
+		        <span id="set"></span></div>
+		        <div class="a4"><input type="submit" value="注册" class="a5"></div>
+				</td>
+				<td class="a7">
+					<h3>已有帐号？</h3>
+					<div class="a4"><a href="enter.html">
+					<input type="button" value="登录" class="a5">
+					</a></div>
+					<p>重要提示：邮箱地址是找回密码的唯一方式，请务必真实填写一个您常用的邮箱地址</p>
+			        <br><br><br><br><br><br>
+				    <a href="index.html">返回首页</a>
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+<script>
+function checkUser()
+{
+	var name = document.getElementById("a");
+	var result = document.getElementById("result");
+	var flag = name.checkValidity();
+	if(flag)
+	{
+		result.innerHTML = "用户名格式正确";
+	}
+	else
+	{
+		result.innerHTML = "用户名格式不正确，请重新输入";
+	}
+}
+</script>
+</body>
+</html>
