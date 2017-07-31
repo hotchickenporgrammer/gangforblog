@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+	.a1{
+		margin: 180px;
+	}
+	.a2{
+		font-size: 30px;
+		color: deeppink;
+	}
+	.a3{
+		margin: 40px;
+	}
+	.a4{
+		margin: 50px 130px;
+	}
+	.a5{
+		width: 100px;
+		height: 30px;
+		background-color: deeppink;
+		color: white;
+	}
+	.a6{
+		width: 450px;
+		text-align: right;
+	}
+	.a7{
+		width: 380px;
+	}
+  
+	input{
+		width: 230px;
+		height: 30px;
+	}
+	span{
+		color: red;
+		font-size: 13px;
+	}
+	a{
+		text-decoration: none;
+	}
+	a:hover{
+		color: deeppink;
+	}
+    p{
+		float: left;
+		margin-top: 40px;
+	}
+body{
+	background: url(../images/backg.jpg);
+}
